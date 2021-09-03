@@ -1,5 +1,5 @@
 import React from "react";
-import "./postcard.css"
+import "./postcard.css";
 
 class Postcard extends React.Component {
     render() {
