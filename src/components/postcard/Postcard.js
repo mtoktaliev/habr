@@ -1,21 +1,23 @@
 import React from "react";
-import "./postcard.css";
+import styles from "./Postcard.module.css";
 
 class Postcard extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
-            <div className="postcard-blocks">
-                <div className="postcard">
-                    <div className="postcard_authors">
-                        <span className="create_name">Тестов Тест</span>
-                        <span className="create_date">31.07.2021 19:59</span>
+            <div className={styles.postcardBlocks}>
+                <div className={styles.postcard}>
+                    <div className={styles.postcardAuthors}>
+                        <span className={styles.createName}>{this.props.createName}</span>
+                        <span className={styles.createDate}>{this.props.createDate}</span>
                     </div>
-                    <div className="postcard_img">
-                        <img className="postcard__img" src="https://picsum.photos/1200/200" alt=""/>
+                    <div className={styles.postcardImg}>
+                        <img className={styles.postcardImg} src="https://picsum.photos/1200/200" alt=""/>
                     </div>
-                    <div className="postcard_title">
-                        <a href="#">NASA переходит в облака: MCP, DAPHNE и облачные инструменты для команды
-                            Perseverance</a>
+                    <div className={styles.postcardTitle}>
+                        <a href="#">{this.props.title}</a>
                     </div>
                 </div>
             </div>

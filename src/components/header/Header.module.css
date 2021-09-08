@@ -30,7 +30,7 @@
     color: white;
 }
 
-.header-right {
+.headerRight {
     float: right;
 }
 
@@ -41,7 +41,7 @@
         text-align: left;
     }
 
-    .header-right {
+    .headerRight {
         float: none;
     }
 }

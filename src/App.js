@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./components/header/Header";
-import Postcard from "./components/postcard/Postcard";
+
+import PostList from "./pages/postList/PostList";
+import Post from "./pages/post/Post";
 
 class App extends React.Component {
   render(){
     return (
         <>
-          <Header/>
-          <Postcard/>
-          <Postcard/>
+            {/*<Post/>*/}
+            <PostList/>
         </>
 
     )

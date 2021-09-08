@@ -1,12 +1,12 @@
 import React from "react";
-import "./header.css"
+import styles from "./Header.module.css"
 
 class Header extends React.Component {
     render() {
         return (
-            <div className="header">
-                <a href="#" className="logo">HABR</a>
-                <div className="header-right">
+            <div className={styles.header}>
+                <a href="#" className={styles.logo}>HABR</a>
+                <div className={styles.headerRight}>
                     <a className="active" href="#home">Все</a>
                     <a href="#">Новости</a>
                     <a href="#">Статьи</a>
